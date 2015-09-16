@@ -1,0 +1,12 @@
+// Section: latest-works
+.latest-works {
+	background-color: $mainColor;
+	.box {
+		margin-bottom: 30px;
+		height: 200px;
+		overflow: hidden;
+		img {
+			height: 100%;
+		}
+	}
+}

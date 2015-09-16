@@ -1,0 +1,71 @@
+// Style for the navbar
+.navbar {
+	padding: 10px 0;
+	transition: all  0.3s linear;
+	ul.nav {
+		margin-right: 80px;
+		li {
+			&:hover {
+				background-color: transparent;
+			}
+			a {
+				color: #eee;
+				text-transform: uppercase;
+				font-size: 13px;
+				position: relative;
+				display: block;
+				transition: all linear 300ms;
+				&:hover {
+					background-color: transparent;
+					&:after {
+						position: absolute;
+						top: 40px;
+						width: 80%;
+						height: 2px;
+						background: #fff;
+						content: '';
+						opacity: 1;
+						transition: opacity 0.3s,top 0.5s, -webkit-transform 0.25s;
+						// transform: translate(10px);
+					}
+				}
+				&:focus {
+					background-color: transparent;
+				}
+				&:after {
+					position: absolute;
+					left: 10%;
+					top: 52px;
+					width: 80%;
+					height: 2px;
+					background: #fff;
+					content: '';
+					opacity: 0;
+					transition: opacity 0.3s,top 0.5s,  -webkit-transform 0.25s;
+					// transform: translate(10px);
+				}
+			}
+		}
+	}
+	&.affix {
+		background:rgba(255,255,255, 0.98);
+		transition: all  0.3s linear;
+//		border-bottom: 1px solid coral;
+		box-shadow: rgba(28, 38, 57, 0.168627) 0px 1px 4px;
+		ul.nav {
+			li {
+				a {
+					color: $text;
+					&:after {
+						background: $text;
+					}
+					&:hover {
+						&:after {
+							background: $text;
+						}
+					}
+				}
+			}
+		}
+	}
+}

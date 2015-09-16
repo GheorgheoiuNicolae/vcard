@@ -1,0 +1,146 @@
+// logo animation
+.logo {
+ user-select: none;
+ cursor: default;
+ height: 100%;
+ &_animated {
+   font-family: Lato, Arial, sans-serif;
+   text-shadow: 0 1px 1px rgba(42,43,61,0.5);
+   font-size: $logoFontSize;
+   height: $headerHeight;
+   line-height: $headerHeight;
+   font-weight: 300;
+   position: absolute;
+   top: 50%;
+   left: 20px;
+   margin: -($headerHeight/2) 0 0;
+   transition: all 0.6s ease-out;
+   transition-delay: 0.5s;
+   z-index: 2;
+
+   @media screen and ( max-width: 1000px ) {
+     transform: scale(0.9);
+   }
+   @media screen and ( max-width: 850px ) {
+     transform: scale(0.65);
+   }
+   @media screen and ( max-width: 700px ) {
+     transform: scale(0.5);
+   }
+ }
+}
+
+.animated {
+ &__slash {
+   color: $red;
+   font-weight: 300;
+   position: absolute;
+   top: -$gap/2;
+   left: $slashDistanceFromLeft;
+   margin-left: $gap/2;
+   transform: scale(1.6);
+   z-index: 5;
+ }
+
+ &_fn, &_ln {
+   top: 50%;
+   margin-top: -$headerHeight;
+   position: absolute;
+   width: $headerHeight*2;
+   height: $headerHeight*2;
+   overflow: hidden;
+   transform: rotateZ($angle);
+   i {
+     font-style: normal;
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: $headerHeight*2;
+     height: $headerHeight*2;
+     line-height: $headerHeight*2;
+     transform: rotateZ(-$angle);
+   }
+ }
+
+ &_fn {
+   text-align: right;
+   direction: rtl;
+   margin-left: -$headerHeight - $gap + 1px;
+   i {
+     text-indent: -$clip;
+   }
+ }
+
+ &_ln {
+   margin-left: $headerHeight + $gap;
+   i {
+     text-indent: -$clip;
+   }
+ }
+
+ &_profession {
+   font-weight: 300;
+   position: absolute;
+	font-size: 12px;
+   top: 10px;
+   left: $professionDistanceFromLeft;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+ }
+ &_name {
+   font-weight: 600;
+   position: absolute;
+   top: -5px;
+	font-size: 16px;
+   left: $professionDistanceFromLeft;
+ }
+ &_fn, &_ln, &_fn i, &_ln i, &_profession, &_name, &__slash {
+   transition: all 0.6s cubic-bezier(0.555, -0.375, 0.000, 1.615);
+ }
+}
+
+.logo_animated--open {
+ .animated {
+   &_fn, &_ln {
+     i {
+       text-indent: $clip;
+     }
+   }
+   &_profession {
+     transform: translateX( $clip*2 );
+     opacity: 0.2;
+   }
+   &_name {
+     transform: translateX( $clip*2 );
+     opacity: 0.2;
+   }
+   &__slash {
+     transform: scale(1.6) rotateZ( -$angle );
+   }
+ }
+}
+
+.logo_animated--slow {
+ .animated {
+   &_fn, &_ln, &_fn i, &_ln i, &_profession, &_name, &__slash {
+     transition: all 1.2s cubic-bezier(0.555, -0.375, 0.000, 1.615);
+   }
+ }
+}
+
+// overwrites for the logo animation to adapt it to the name lenth
+.logo_animated {
+	top: 0;
+	margin: -10px 10px;
+	position: initial;
+	line-height: 70px;
+	.animated__slash {
+		top: 0;
+		margin-left: 0;
+		font-weight: normal;
+	}
+	.animated_ln, .animated_fn {
+		top: auto;
+		margin-top: -70px;
+	}
+}
