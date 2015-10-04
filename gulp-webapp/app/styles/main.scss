@@ -1,8 +1,10 @@
 $icon-font-path: '../fonts/';
 @import 'variables.scss';
 
+@import "external/photoswipe.css";
+@import "external/default-skin/default-skin.css";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/photoswipe/src/css/main.scss";
+//@import "bower_components/photoswipe/src/css/main.scss";
 
 @import "typography.scss";
 @import "section.scss";

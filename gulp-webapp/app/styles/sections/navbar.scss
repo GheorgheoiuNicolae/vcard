@@ -2,6 +2,10 @@
 .navbar {
 	padding: 10px 0;
 	transition: all  0.3s linear;
+    .navbar-brand {
+      padding: 10px 15px;
+      color: white;
+    }
 	ul.nav {
 		margin-right: 80px;
 		li {
@@ -52,6 +56,12 @@
 		transition: all  0.3s linear;
 //		border-bottom: 1px solid coral;
 		box-shadow: rgba(28, 38, 57, 0.168627) 0px 1px 4px;
+      
+        .navbar-brand {
+            .logo {
+              color: $text;
+            }
+        }
 		ul.nav {
 			li {
 				a {
