@@ -23,9 +23,13 @@
 		font-weight: bold;
 		color: $white;
 		text-transform: uppercase;
+		font-family: Helvetica, Arial, sans-serif;
     }
 	p {
-		font-family: "adobe-garamond-pro";
+		font-family: 'EB Garamond', 'Times New Roman',  serif;
 		font-size: 22px;
+	}
+	a.btn {
+		margin: 10px;
 	}
 }
