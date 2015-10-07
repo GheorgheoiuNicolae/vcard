@@ -3,6 +3,11 @@
 	background-color: $mainColor;
 	background-color: #eee;
 	.box {
-		margin-bottom: 20px;
+		max-width: 20%;
+		float: left;
+		padding: 1px;
+		figure {
+			display: none;
+		}
 	}
 }
