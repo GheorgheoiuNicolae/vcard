@@ -6,6 +6,7 @@
   "devDependencies": {
     "babel-core": "^5.5.6",
     "browser-sync": "^2.2.1",
+    "browserify": "^11.2.0",
     "del": "^1.1.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
@@ -38,5 +39,55 @@
         "single"
       ]
     }
-  }
+  },
+  "name": "vcard",
+  "version": "1.0.0",
+  "description": "Personal theme",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-core": "^5.8.22",
+    "browser-sync": "^2.8.2",
+    "bootstrap-sass": "^3.3.5",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cache": "^0.2.10",
+    "gulp-eslint": "^0.13.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-size": "^1.3.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^1.3.0",
+    "jquery": "^2.1.4",
+    "main-bower-files": "^2.9.0",
+    "opn": "^1.0.2",
+    "photoswipe": "^4.1.0",
+    "progressbar.js": "^0.9.0",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "build": "browserify app/scripts/main.js -o app/scripts/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GheorgheoiuNicolae/vcard.git"
+  },
+  "keywords": [
+    "vcard"
+  ],
+  "author": "Gheorgheoiu Nicolae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GheorgheoiuNicolae/vcard/issues"
+  },
+  "homepage": "https://github.com/GheorgheoiuNicolae/vcard#readme"
 }
