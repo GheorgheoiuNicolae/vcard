@@ -1,7 +1,7 @@
 // Section: Footer
 footer.footer {
 	.top-side {
-		background-color: $mainColor;
+		background-color: #eee;
 		padding: 30px 0;
 		h4 {
 			margin: 10px 0 0;
@@ -9,12 +9,12 @@ footer.footer {
 	}
 	.middle-side {
 		padding: 30px 0;
-		background-color: #000;
+		background-color: white;
 	}
 	.bottom-side {
 		background-color: #999;
 		padding: 30px;
-		background-color: $mainColor;
+		background-color: #1e1e1e;
 		p {
 			color: $white;
 		}
@@ -22,10 +22,15 @@ footer.footer {
     ul.social-media {
         li {
 			padding: 20px;
-			i {
-				display: block;
-				text-align: center;
-				font-size: 28px;
+			a {
+				i {
+					display: block;
+					text-align: center;
+					font-size: 28px;
+				}
+				&:hover {
+					text-decoration: none;
+				}
 			}
         }
     }
