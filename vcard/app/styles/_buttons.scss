@@ -1,0 +1,32 @@
+.btn {
+  border-radius: 0;
+  border: 2px solid;
+  &:focus {
+    background-color: inherit!important;
+    border-color: inherit!important;
+  }
+  &:active {
+    background-color: inherit!important;
+    border-color: inherit!important;
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: inherit!important;
+    border-color: inherit!important;
+  }
+}
+
+
+// BUTTON MiIIN
+
+// Using SASS mixin to devine original button
+//.btn-dark {
+//  @include button-variant(color, background, border);
+//}
+
+.btn-dark {
+  @include button-variant($black, $transparent, $black);
+}
+.btn-light {
+  @include button-variant($white, $transparent, $white);
+}
