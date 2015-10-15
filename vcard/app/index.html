@@ -8,9 +8,11 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -39,7 +41,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="header navbar-brand">
-					<img src="images/logo.png" alt="">
+					<h1 class="logo">My <span class="hidden">/</span> Self</h1>
 				</div>
 			</div>
 
@@ -63,7 +65,6 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-<!--				<img src="images/slider_img.jpg">-->
 				<img src="http://12ot47uc0fw1m9rn2sc1ho10.wpengine.netdna-cdn.com/wp-content/uploads/2014/09/hero12.jpg" alt="">
 				<div class="carousel-caption">
 					<h1>Joel Doe</h1>
@@ -74,7 +75,30 @@
 			</div>
 		</div>
 	</div>
-	
+
+
+	<section class="about-me">
+		<div class="container">
+			<div class="col-sm-3">
+				<div class="avatar"><img src="images/avatar.jpg" alt=""></div>
+				<p>HTML</p>
+				<div class="progressbar html"></div>
+				<p>CSS</p>
+				<div class="progressbar css"></div>
+				<p>Javascript</p>
+				<div class="progressbar javascript"></div>
+			</div>
+			<div class="col-sm-9">
+				<h1 class="">A brief background</h1>
+					<p class="">My interest in web development stemmed from my passion for gaming. Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. Some of my passions are writing clean code, creating sexy user experiences and filling up a fresh cup of coffee.</p>
+					<div class="">
+						<a href="#" class="btn btn-dark">
+							Find out more about me
+						</a>
+					</div>
+			</div>
+		</div>
+	</section>
 	
 	
 	<section class="short-about">
@@ -93,7 +117,7 @@
 					<p class="text-center">My interest in web development stemmed from my passion for gaming. Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. Some of my passions are writing clean code, creating sexy user experiences and filling up a fresh cup of coffee.</p>
 					<div class="text-center">
 						<a href="#" class="btn btn-dark">
-							Learn more about me
+							Find out more about me
 						</a>
 					</div>
 				</div>
@@ -305,7 +329,7 @@
 				<div class="col-sm-12">
 					<div class="text-center">
 						<a href="#" class="btn btn-dark">
-							Learn more about me
+							Find out more about me
 						</a>
 					</div>
 					<hr class="separator">
@@ -355,6 +379,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
+						<h3 class="text-center">Contact me</h3>
+						<ul class="contact-details list-inline text-center">
+							<li><a href="#"><i class="fa fa-phone"></i>+04 0728 789 838</a></li>
+							<li><a href="mailto:nicolae@gheorgheoiu.com"><i class="fa fa-envelope"></i>nicolae@gheorgheoiu.com</a></li>
+						</ul>
+						<h3 class="text-center">Let's socialize!</h3>
 						<ul class="social-media list-inline text-center">
 							<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
@@ -423,6 +453,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/progressbar.js/dist/progressbar.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

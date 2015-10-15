@@ -1,37 +1,49 @@
 // Section: Footer
 footer.footer {
 	.top-side {
-		background-color: #eee;
+		background-color: #111;
 		padding: 30px 0;
 		h4 {
 			margin: 10px 0 0;
+			color: #fff;
 		}
 	}
 	.middle-side {
 		padding: 30px 0;
-		background-color: white;
+		background-color: #111;
 	}
 	.bottom-side {
-		background-color: #999;
 		padding: 30px;
-		background-color: #1e1e1e;
+		background-color: #000;
 		p {
-			color: $white;
+			color: #999;
 		}
 	}
-    ul.social-media {
-        li {
+
+  ul.social-media, ul.contact-details {
+	  li {
 			padding: 20px;
+			&:hover {
+				border: 1px solid #eee;
+				padding: 19px;
+			}
 			a {
+				color: #eee;
 				i {
 					display: block;
 					text-align: center;
 					font-size: 28px;
+					margin-bottom: 5px
 				}
 				&:hover {
 					text-decoration: none;
 				}
 			}
-        }
     }
+  }
+  h3 {
+  	border-bottom: 1px solid $grey-dark;
+  	padding-bottom: 20px;
+  	color: $grey-light;
+  }
 }
