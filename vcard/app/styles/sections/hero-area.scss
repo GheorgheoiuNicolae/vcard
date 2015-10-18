@@ -14,16 +14,22 @@
 				top: -200px;
 			}
 		}
+		p {
+			font-family: Merriweather, Helvetica;
+			font-weight: 400;
+			text-rendering: geometricPrecision;
+			font-style: italic;
+		}
 	}
 	.carousel-caption {
 		bottom: 200px;
 	}
     h1 {
-        font-size: 64px;
-		font-weight: bold;
-		color: $white;
-		text-transform: uppercase;
-		font-family: Helvetica, Arial, sans-serif;
+      font-size: 64px;
+			font-weight: bold;
+			color: $white;
+			text-transform: uppercase;
+			font-family: Helvetica, Arial, sans-serif;
     }
 	p {
 		font-family: 'EB Garamond', 'Times New Roman',  serif;

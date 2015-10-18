@@ -2,21 +2,15 @@
 $(window).bind("load", function() {
   // Progressbars
     // Animated lines
-    var htmlLine = new ProgressBar.Line('.html', { color: '#FCB03C' });
-    htmlLine.animate(1.0);  // Number from 0.0 to 1.0
+    // var htmlLine = new ProgressBar.Line('.html', { color: '#FCB03C' });
+    // htmlLine.animate(1.0);  // Number from 0.0 to 1.0
 
-    var cssLine = new ProgressBar.Line('.css', { color: '#FCB03C' });
-    cssLine.animate(0.7);  // Number from 0.0 to 1.0
+    // var cssLine = new ProgressBar.Line('.css', { color: '#FCB03C' });
+    // cssLine.animate(0.7);  // Number from 0.0 to 1.0
 
-    var jsLine = new ProgressBar.Line('.javascript', { color: '#FCB03C' });
-    jsLine.animate(0.9);  // Number from 0.0 to 1.0
+    // var jsLine = new ProgressBar.Line('.javascript', { color: '#FCB03C' });
+    // jsLine.animate(0.9);  // Number from 0.0 to 1.0
   // end Progressbars
-
-
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
-
 
 // photoswipe for homepage gallery
 (function() {
