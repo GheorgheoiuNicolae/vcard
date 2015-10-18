@@ -11,7 +11,6 @@
 				opacity: 0.2;
 				width: 100%;
 				position: absolute;
-				top: -200px;
 			}
 		}
 		p {
@@ -24,18 +23,34 @@
 	.carousel-caption {
 		bottom: 200px;
 	}
-    h1 {
-      font-size: 64px;
-			font-weight: bold;
-			color: $white;
-			text-transform: uppercase;
-			font-family: Helvetica, Arial, sans-serif;
-    }
+  h1 {
+    font-size: 64px;
+		font-weight: bold;
+		color: $white;
+		text-transform: uppercase;
+		font-family: Helvetica, Arial, sans-serif;
+  }
 	p {
 		font-family: 'EB Garamond', 'Times New Roman',  serif;
 		font-size: 22px;
 	}
 	a.btn {
 		margin: 10px;
+	}
+}
+
+// Responsive 
+@media all and (max-width: 767px) {
+	.hero-area {
+		height: 300px;
+		.carousel-caption {
+			bottom: 0px;
+		}
+		h1 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+		}
 	}
 }

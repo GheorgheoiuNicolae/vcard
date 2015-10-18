@@ -9,15 +9,12 @@
 		
 		&:hover {
 			.project-details {
-				opacity: 1;
+				display: block!important;
 				transition: all 0.5s ease;
 			}
 		}
-		img {
-			height: 100%;
-		}
 		.project-details {
-			opacity: 0;
+			display: none;
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -33,6 +30,9 @@
 				font-size: 16px;
 				font-family: Helvetica, Arial, sans-serif;
 				margin-bottom: 15px;
+				&::after {
+					display: none;
+				}
 			}
 			a {
 				position: absolute;
@@ -64,7 +64,20 @@
 					color: #fff;
 				}
 			}
-
 		}	
+	}
+}
+
+// Responsive 
+@media all and (max-width: 767px) {
+	.latest-works .box {
+		height: auto;
+		.project-details {
+			display: block;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
