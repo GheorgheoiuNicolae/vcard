@@ -13,13 +13,14 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/bower_components/jquery-asPieProgress/css/progress.css">
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -28,7 +29,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
 <div class="wrap-everything">
 	<div class="navigation">
 		<nav class="navbar navbar-fixed-top clearfix" role="navigation" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
@@ -59,7 +60,7 @@
 		</nav>
 	</div><!-- navigation -->
 
-	
+
 	<div class="hero-area" class="carousel slide" data-ride="carousel">
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
@@ -74,19 +75,21 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<section class="short-about">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5 hidden">
+				<div class="col-sm-3 profile">
 					<h1 class="text-center">Profile</h1>
 					<ul class="list-unstyled">
-						<li><b>DATE OF BIRTH:</b> 24 JAN 1989</li>
-						<li><b>PHONE:</b> 012-345-6789</li>
-						<li><b>EMAIL:</b> SILITY@EXAMPLE.COM</li>
-					</ul>
+		        <li> <span>Name:</span> John Snow </li>
+		        <li> <span>Date of birth:</span> 26 April 1986 </li>
+		        <li> <span>Nationality:</span> German </li>
+		        <li> <span>Living in:</span> New York</li>
+		        <li> <span>Proffession:</span> Designer </li>
+		      </ul>
 				</div>
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-sm-9">
 					<h1 class="text-center">A brief background</h1>
 					<p class="text-center">My interest in web development stemmed from my passion for gaming. Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. Some of my passions are writing clean code, creating sexy user experiences and filling up a fresh cup of coffee.</p>
 					<div class="text-center">
@@ -95,12 +98,52 @@
 						</a>
 					</div>
 				</div>
-				<div class="clearfix"></div>
-				<hr class="separator">
 			</div><!-- row -->
+      <div class="row">
+        <!-- progressbars -->
+        <div class="progressbars clearfix">
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="70" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">70%</span>
+              <div class="progress__meter"><span class="progress__label">User Interface</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="80" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">80%</span>
+              <div class="progress__meter"><span class="progress__label">User Experience</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="90" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">90%</span>
+              <div class="progress__meter"><span class="progress__label">HTML 5 / CSS 3</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="90" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">90%</span>
+              <div class="progress__meter"><span class="progress__label">Responsive</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="60" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">60%</span>
+              <div class="progress__meter"><span class="progress__label">Client-side MVC</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pieProgress" role="progressbar" data-goal="40" aria-valuemin="0" data-step="2" aria-valuemax="100">
+              <span class="percentage">40%</span>
+              <div class="progress__meter"><span class="progress__label">SEO</span></div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- row -->
+      <hr class="separator">
 		</div><!-- container -->
 	</section>
-	
+
 	<section class="latest-works">
 		<div class="container">
 			<div class="row">
@@ -108,7 +151,7 @@
 					<h1 class="text-center">Latest projects</h1>
 					<div id="bar"></div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">Avelon</h1>
@@ -120,7 +163,7 @@
 						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/04/0102-1400x969-98914.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">Funtastic</h1>
@@ -132,7 +175,7 @@
 						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/04/0079-1400x969-24610.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">Formidable</h1>
@@ -144,7 +187,7 @@
 						<img src="http://market.designmodo.com/wp-content/uploads/2015/04/Header-2100x1408-54095.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">Advanced</h1>
@@ -156,7 +199,7 @@
 						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/08/dragndrop3-2000x1349-104861-2000x1349-69909.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">Android App</h1>
@@ -168,7 +211,7 @@
 						<img src="http://market.designmodo.com/wp-content/uploads/2015/08/004-2000x1333-254891-2000x1333-10538.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
 							<h1 class="project-title">User Interface</h1>
@@ -180,7 +223,7 @@
 						<img src="http://market.designmodo.com/wp-content/uploads/2015/08/0014-2000x1333-291941-2000x1333-36373.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
-				
+
 				<div class="col-sm-12">
 					<div class="text-center">
 						<a href="#" class="btn btn-dark">View my porfolio</a>
@@ -190,116 +233,116 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="a-look-into-my-life">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					<h1 class="text-center">A look into my life</h1>
 				</div>
-			
+
 				<div id="a-look-into-my-live" class="a-look-into-my-live photo-grid clearfix" data-pswp-uid="1">
-					<a href="images/personal/1.jpg" 
-					   data-size="1600x1067" 
-					   data-med="images/personal/1.jpg" 
-					   data-med-size="1024x1024" 
-					   data-author="Folkert Gorter" 
+					<a href="images/personal/1.jpg"
+					   data-size="1600x1067"
+					   data-med="images/personal/1.jpg"
+					   data-med-size="1024x1024"
+					   data-author="Folkert Gorter"
 					   class="box">
 					  <img src="images/personal/1.jpg" alt="">
 					  <figure>I love coffee! Gets my day started and makes it longer when needed.</figure>
 					</a>
 
-					<a href="images/personal/2.jpg" 
-				  		data-size="1600x1067" 
-				  		data-med="images/personal/2.jpg" 
-				  		data-med-size="1024x683" 
+					<a href="images/personal/2.jpg"
+				  		data-size="1600x1067"
+				  		data-med="images/personal/2.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="Thomas Lefebvre"
 				  		class="box">
 					  <img src="images/personal/2.jpg" alt="">
 					  <figure>The freedom of working remote is amazing!</figure>
 					</a>
 
-					<a href="images/personal/3.jpg" 
-				  		data-size="1600x1067" 
-				  		data-med="images/personal/3.jpg" 
-				  		data-med-size="1024x683" 
+					<a href="images/personal/3.jpg"
+				  		data-size="1600x1067"
+				  		data-med="images/personal/3.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="Michael Hull"
 				  		class="box">
 					  <img src="images/personal/3.jpg" alt="">
 					  <figure>This is Barker, my best friend.</figure>
 					</a>
 
-					<a href="images/personal/4.jpg" 
-				  		data-size="1600x1067" 
-				  		data-med="images/personal/4.jpg" 
-				  		data-med-size="1024x683" 
+					<a href="images/personal/4.jpg"
+				  		data-size="1600x1067"
+				  		data-med="images/personal/4.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="Ales Krivec"
 				  		class="box">
 					  <img src="images/personal/4.jpg" alt="">
 					  <figure>Yes, I'm an Apple fanboy...</figure>
 					</a>
 
-					<a href="images/personal/5.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/5.jpg" 
-				  		data-med-size="1024x683" 
+					<a href="images/personal/5.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/5.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
 				  		class="box">
 					  <img src="images/personal/5.jpg" alt="">
 					  <figure>I like to get high... at least 3000ft</figure>
 					</a>
-					
-					<a href="images/personal/6.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/6.jpg" 
-				  		data-med-size="1024x683" 
+
+					<a href="images/personal/6.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/6.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
 				  		class="box">
 					  <img src="images/personal/6.jpg" alt="">
 					  <figure>Cooking is an art. It's also one of the most relaxing things I do.</figure>
 					</a>
-					
-					<a href="images/personal/7.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/7.jpg" 
-				  		data-med-size="1024x683" 
+
+					<a href="images/personal/7.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/7.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
-				  		class="box">
+				  		class="box hidden-xs">
 					  <img src="images/personal/7.jpg" alt="">
 					  <figure>My most relaxing passion.</figure>
 					</a>
-					
-					<a href="images/personal/8.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/8.jpg" 
-				  		data-med-size="1024x683" 
+
+					<a href="images/personal/8.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/8.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
-				  		class="box">
+				  		class="box hidden-xs">
 					  <img src="images/personal/8.jpg" alt="">
 					  <figure>I always liked photography, now I have the necessarry toys to dive into it.</figure>
 					</a>
-					
-					<a href="images/personal/9.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/9.jpg" 
-				  		data-med-size="1024x683" 
+
+					<a href="images/personal/9.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/9.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
-				  		class="box">
+				  		class="box hidden-xs">
 					  <img src="images/personal/9.jpg" alt="">
 					  <figure>I also like my guitar. I used to play a lot but since I have so many hobbies I don't have that much free time. :-)</figure>
 					</a>
-					
-					<a href="images/personal/10.jpg" 
-				  		data-size="1600x1068" 
-				  		data-med="images/personal/10.jpg" 
-				  		data-med-size="1024x683" 
+
+					<a href="images/personal/10.jpg"
+				  		data-size="1600x1068"
+				  		data-med="images/personal/10.jpg"
+				  		data-med-size="1024x683"
 				  		data-author="-author"
-				  		class="box">
+				  		class="box hidden-xs">
 					  <img src="images/personal/10.jpg" alt="">
 					  <figure>This is Odin. He and Barker get along pretty well.</figure>
 					</a>
 				</div>
-				
+
 				<div class="col-sm-12">
 					<div class="text-center">
 						<a href="#" class="btn btn-dark">
@@ -311,8 +354,8 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="clients">
 		<div class="container">
 			<div class="row">
@@ -326,7 +369,7 @@
 						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-03.png"></li>
 						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-04.png"></li>
 					</div>
-					<div class="row-wrap clearfix">
+					<div class="row-wrap clearfix hidden-xs">
 						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-04.png"></li>
 						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-03.png"></li>
 						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-02.png"></li>
@@ -336,8 +379,8 @@
 			</div>
 		</div>
 	</section>
-	
-	
+
+
 	<footer class="footer">
 		<div class="top-side hidden">
 			<div class="container">
@@ -379,10 +422,10 @@
 		</div>
 	</footer>
 </div><!-- wrap-everything -->
-   
-   
-   
-   
+
+
+
+
 <!-- Container for Photoswipe -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="pswp__bg"></div>
@@ -427,10 +470,10 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="/bower_components/jquery-asPieProgress/dist/jquery-asPieProgress.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -447,7 +490,7 @@
     <script src="scripts/photoswipe.min.js"></script>
     <script src="scripts/photoswipe-ui-default.min.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

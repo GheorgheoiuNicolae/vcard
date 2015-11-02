@@ -12,6 +12,24 @@ $(window).bind("load", function() {
     // jsLine.animate(0.9);  // Number from 0.0 to 1.0
   // end Progressbars
 
+
+// Progressbars - circles on the homepage
+$(".pieProgress").asPieProgress({
+    namespace: 'pieProgress',
+    speed: 30, // refresh speed
+    delay: 2000,
+    easing: 'ease',
+    label: function(n) {
+        var percentage = this.getPercentage(n);
+        return percentage;
+    }
+});
+$(".pieProgress").asPieProgress("start");
+
+
+
+
+
 // photoswipe for homepage gallery
 (function() {
 

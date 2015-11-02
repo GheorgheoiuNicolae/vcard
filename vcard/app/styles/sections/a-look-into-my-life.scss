@@ -12,3 +12,12 @@
 		}
 	}
 }
+
+// Responsive
+@media all and (max-width: 767px) {
+  .a-look-into-my-live {
+  	.box {
+  		max-width: 50%;
+  	}
+  }
+}

@@ -36,3 +36,14 @@
 		}
 	}
 }
+
+// Responsive
+@media all and (max-width: 767px) {
+  .clients {
+  	padding-bottom: 0;
+  	ul li {
+  		width: 50%!important;
+  		border-bottom: 1px solid $black-transparent;
+  	}
+  }
+}
