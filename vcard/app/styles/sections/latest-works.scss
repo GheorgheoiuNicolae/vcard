@@ -6,7 +6,8 @@
 		height: 200px;
 		overflow: hidden;
 		position: relative;
-		
+		transition: all 0.5s ease;
+
 		&:hover {
 			.project-details {
 				display: block!important;
@@ -21,7 +22,7 @@
 			background: rgba(0, 0, 0, 0.8);
 			padding: 10px 20px;
 			transition: all 0.5s ease;
-			
+
 			h1.project-title {
 				display: block;
 				width: 100%;
@@ -64,11 +65,11 @@
 					color: #fff;
 				}
 			}
-		}	
+		}
 	}
 }
 
-// Responsive 
+// Responsive
 @media all and (max-width: 767px) {
 	.latest-works .box {
 		height: auto;

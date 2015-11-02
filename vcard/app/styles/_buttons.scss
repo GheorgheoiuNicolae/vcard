@@ -1,18 +1,19 @@
 .btn {
   border-radius: 0;
   border: 2px solid;
+  transition: all 0.5s ease;
   &:focus {
-    background-color: inherit!important;
-    border-color: inherit!important;
+    background-color: inherit;
+    border-color: inherit;
   }
   &:active {
-    background-color: inherit!important;
-    border-color: inherit!important;
+    background-color: inherit;
+    border-color: inherit;
     box-shadow: none;
   }
   &:hover {
-    background-color: inherit!important;
-    border-color: inherit!important;
+    background-color: inherit;
+    border-color: inherit;
   }
 }
 
@@ -26,7 +27,19 @@
 
 .btn-dark {
   @include button-variant($black, $transparent, $black);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
 }
 .btn-light {
   @include button-variant($white, $transparent, $white);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
+  }
 }
