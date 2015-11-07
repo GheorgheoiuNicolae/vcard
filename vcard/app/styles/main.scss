@@ -5,25 +5,23 @@
 @import "external/default-skin/default-skin.css";
 // endbower
 
-@import 'variables.scss';
-
-
 
 // Theme styles
 @import "typography.scss";
-@import "section.scss";
 @import "colors.scss";
 @import "general.scss";
-@import "logo.scss";
 @import "buttons.scss";
 
 
 // Section styles
 @import "sections/navbar.scss";
 @import "sections/hero-area.scss";
-@import "sections/latest-works.scss";
-@import "sections/a-look-into-my-life.scss";
-@import "sections/clients.scss";
-@import "sections/short-about.scss";
-@import "sections/about-me.scss";
 @import "sections/footer.scss";
+@import "theme.scss";
+
+
+
+// Helper classes
+.mt10 {
+  margin-top: 10px;
+}

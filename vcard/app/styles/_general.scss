@@ -1,4 +1,4 @@
-// GENERAL STYLES 
+// GENERAL STYLES
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -23,15 +23,12 @@ body {
 .text-center {
 	text-align: center;
 }
-
-
-// style for section with image on background
-.has-img-bg {
-	min-height: 300px;
-	position: relative;
-	overflow: hidden;
-	img {
-		position: absolute;
-		width: 100%;
-	}
+section {
+  padding: 50px 0px;
+  h1 {
+    margin-bottom: 30px;
+  }
+  .btn {
+    margin-top: 30px;
+  }
 }

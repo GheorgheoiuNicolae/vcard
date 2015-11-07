@@ -1,4 +1,18 @@
 // Style for the navbar
+.logo {
+  margin: 0;
+  padding: 0;
+  padding: 5px 15px;
+  span {
+    color: #eee;
+  }
+  small {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
 .navbar {
 	padding: 10px 0;
 	transition: all  0.3s linear;
@@ -24,7 +38,7 @@
 			max-height: 100%;
 		}
   }
-	
+
 	ul.nav {
 		margin-right: 30px;
 		li {
@@ -73,7 +87,7 @@
 		background:rgba(255,255,255, 0.98);
 		transition: all  0.3s linear;
 		box-shadow: rgba(28, 38, 57, 0.168627) 0px 1px 4px;
-      
+
         .navbar-brand {
             h1 {
               color: #434d57;
