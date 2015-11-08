@@ -3,3 +3,69 @@ h1 {
 	font-size: 24px;
 	font-family: 'Merriweather', 'Times New Roman',  serif;
 }
+
+
+
+
+
+// Title effect
+
+/* Takiri */
+.title--animated {
+  font-style: italic;
+  // font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  font-size: 2em;
+  // padding: 0 10px 20px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.title--animated:hover {
+  color: #1e1a1b;
+}
+
+.title--animated::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  bottom: -2px;
+  // margin-top: -18px;
+  // left: -10%;
+  z-index: 0;
+  background: red;
+  -webkit-transform: scale3d(1,0,1);
+  transform: scale3d(0,0,0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.title--animated:hover::before {
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+.title--animated span {
+  font-size: 50%;
+  font-weight: 400;
+  position: absolute;
+  right: 15px;
+  color: red;
+  bottom: -20px;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translate3d(-10px,-10px,0);
+  transform: translate3d(-10px,-10px,0);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.title--animated:hover span {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
