@@ -19,6 +19,19 @@
       }
     }
   }
+  .skills {
+    margin-top: 60px;
+    .skills-list li {
+      display: block;
+      float: left;
+      padding: 5px 10px;
+      background-color: cornsilk;
+      margin: 5px;
+      font-size: 12px;
+      border-radius: 3px
+    }
+  }
+
   // Responsive
   @media all and (max-width: 767px) {
     .profile {
@@ -71,6 +84,12 @@
     position: relative;
     padding-top: 60px;
     padding-bottom: 60px;
+    i.fa {
+      position: absolute;
+      width: 100%;
+      font-size: 32px;
+      top: 45px;
+    }
     .progress__label {
       position: absolute;
       bottom: -30px;
@@ -161,7 +180,7 @@
           display: none;
         }
       }
-      a {
+      a.icon-link {
         position: absolute;
         bottom: 20px;
         left: 10px;
@@ -283,4 +302,43 @@
       border-bottom: 1px solid $black-transparent;
     }
   }
+}
+
+
+
+// Section: (About): Hobbies
+.hobbies {
+  .box {
+    .icon {
+      color: #fff;
+      i {
+        font-size: 38px;
+        background-color: #000;
+        padding: 40px;
+      }
+    }
+  }
+}
+
+
+
+.showcase-img {
+  padding: 20px;
+  box-shadow: 10px 20px 20px #eee;
+  margin-bottom: 20px;
+}
+p.tech {
+  padding: 10px 0;
+  span {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+}
+
+.a-look-into-my-life.portfolio .box {
+  max-height: 100px;
+  overflow: hidden;
 }

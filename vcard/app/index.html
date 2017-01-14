@@ -2,14 +2,15 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Personal website of Gheorgheoiu Nicolae. Designer and frontend developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>vcard</title>
+    <title>Gheorgheoiu Nicolae</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
@@ -40,7 +41,11 @@
 					<i class="fa fa-bars"></i>
 				</button>
 				<div class="header navbar-brand">
-					<h1>Joel Doe</h1>
+          <h1>
+            <a href="/index.html" class="logo">
+              Gheorgheoiu Nicolae
+            </a>
+          </h1>
 					<!-- <img src="images/logo2.png" alt=""> -->
 				</div>
 			</div>
@@ -49,12 +54,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Experiences</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Blog</a></li>
-					<!-- <li><a href="#">Contact</a></li> -->
+					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
@@ -65,12 +65,13 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active" class="parallax-window" data-parallax="scroll" data-image-src="http://12ot47uc0fw1m9rn2sc1ho10.wpengine.netdna-cdn.com/wp-content/uploads/2014/09/hero12.jpg">
-				<img src="http://12ot47uc0fw1m9rn2sc1ho10.wpengine.netdna-cdn.com/wp-content/uploads/2014/09/hero12.jpg" alt="">
+				<!-- <img src="http://12ot47uc0fw1m9rn2sc1ho10.wpengine.netdna-cdn.com/wp-content/uploads/2014/09/hero12.jpg" alt=""> -->
+        <img src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/114AUH4PKZ.jpg" alt="">
 				<div class="carousel-caption">
-					<h1>Joel Doe</h1>
-					<p>Passioned Frontend developer with a JavaScript addiction.</p>
-					<a href="#" class="btn btn-light">Projects</a>
-					<a href="#" class="btn btn-light">Resume</a>
+					<h1>Gheorgheoiu Nicolae</h1>
+					<p>Passioned Frontend developer with a keen eye for design.</p>
+					<a href="#" class="btn btn-light">Portfolio</a>
+					<a href="/cv.pdf" download class="btn btn-light">Download Resume</a>
 				</div>
 			</div>
 		</div>
@@ -80,7 +81,7 @@
 		<div class="container">
 			<div class="row">
         <div class="col-sm-3 text-center">
-          <img src="images/avatar.jpg">
+          <img src="images/me.jpg">
         </div>
 				<div class="col-sm-4 profile">
 					<h1 class="title title--animated">
@@ -88,11 +89,11 @@
             <span>Facts</span>
           </h1>
 					<ul class="list-unstyled">
-		        <li> <span>Name:</span> John Snow </li>
-		        <li> <span>Date of birth:</span> 26 April 1986 </li>
-		        <li> <span>Nationality:</span> German </li>
-		        <li> <span>Living in:</span> New York</li>
-		        <li> <span>Proffession:</span> Designer </li>
+		        <li> <span>Name:</span> Gheorgheoiu Nicolae </li>
+		        <li> <span>Date of birth:</span> 4 December 1990 </li>
+		        <li> <span>Nationality:</span> Romanian </li>
+		        <li> <span>Living in:</span> Cluj-Napoca</li>
+		        <li> <span>Proffession:</span> Frontend Developer </li>
 		      </ul>
 				</div>
 				<div class="col-sm-5 a-brief-background">
@@ -100,58 +101,39 @@
             About me
             <span>A brief background</span>
           </h1>
-					<p class="text mt10">My interest in web development stemmed from my passion for gaming. <br> Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. <br>
-          Some of my passions are writing clean code, creating great user experiences and filling up a fresh cup of coffee.</p>
+					<p class="text mt10">I first met Photoshop in 2004 and I thought it was fun. I could play with pixels to create pretty web interfaces but it was not enough for me, as my work was completely static.
+            <br>So, out of curiosity, I started to learn Fronted development in order to bring my work to life.</p>
 				</div>
 			</div><!-- row -->
+      <!--skills-->
       <div class="row">
-        <!-- progressbars -->
-        <div class="progressbars clearfix">
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="70" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">70%</span>
-              <div class="progress__meter"><span class="progress__label">User Interface</span></div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="80" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">80%</span>
-              <div class="progress__meter"><span class="progress__label">User Experience</span></div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="90" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">90%</span>
-              <div class="progress__meter"><span class="progress__label">HTML 5 / CSS 3</span></div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="90" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">90%</span>
-              <div class="progress__meter"><span class="progress__label">Responsive</span></div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="60" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">60%</span>
-              <div class="progress__meter"><span class="progress__label">Client-side MVC</span></div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-sm-2">
-            <div class="pieProgress" role="progressbar" data-goal="40" aria-valuemin="0" data-step="2" aria-valuemax="100">
-              <span class="percentage">40%</span>
-              <div class="progress__meter"><span class="progress__label">SEO</span></div>
-            </div>
-          </div>
+        <div class="container skills">
+          <h1 class="title title--animated">
+            Skills
+            <span>Technologies and tools</span>
+          </h1>
+          <ul class="skills-list list-unstyled">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Angular JS</li>
+            <li>Responsive</li>
+            <li>React JS</li>
+            <li>Flux</li>
+            <li>Redux</li>
+            <li>jQuery</li>
+            <li>User Experience</li>
+            <li>User interface</li>
+            <li>JS libraries</li>
+            <li>REST</li>
+            <li>SCRUM</li>
+            <li>GIT</li>
+            <li>Photoshop</li>
+            <li>Sketch</li>
+          </ul>
         </div>
-        <div class="col-sm-12">
-          <div class="text-center">
-            <a href="#" class="btn btn-dark">
-              Find out more about me
-            </a>
-          </div>
-        </div>
-      </div> <!-- row -->
+      </div><!-- row -->
+
       <hr class="separator">
 		</div><!-- container -->
 	</section>
@@ -162,86 +144,112 @@
 				<div class="col-sm-12">
 					<h1 class="text-center title title--animated">
             Projects
-            <span>What I'm proud of</span>
+            <span>Few of my works</span>
           </h1>
 					<div id="bar"></div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
-							<h1 class="project-title">Avelon</h1>
+							<a href="zeigs-uns.html">
+                <h1 class="project-title">BASF Zeig's uns!</h1>
+							</a>
 							<span class="underline"></span>
-							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
+							<p class="tags">Fronted development, UI, UX, Responsive <p>
+							<a class="icon-link" href="zeigs-uns.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Campaign website for BASF. <br></p>
 						</div>
-						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/04/0102-1400x969-98914.jpg" alt="" class="img-responsive">
+						<a href="zeigs-uns.html">
+              <img src="images/portfolio/basf/thumb.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+        <!-- Change project to timetex -->
+        <div class="col-md-4 col-sm-6 col-xs-6">
+					<div class="box">
+						<div class="project-details">
+							<a href="timetex.html">
+                <h1 class="project-title">Timetex Schulplaner</h1>
+							</a>
+							<span class="underline"></span>
+							<p class="tags">Frontend, Angular JS</p>
+							<a class="icon-link" href="timetex.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Webapp based on Angular.</p>
+						</div>
+						<a href="timetex.html">
+              <img src="images/portfolio/timetex/thumb.png" alt="" class="img-responsive">
+						</a>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
-							<h1 class="project-title">Funtastic</h1>
+							<a href="alcedo7.html">
+                <h1 class="project-title">Alcedo 7</h1>
+							</a>
 							<span class="underline"></span>
 							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
+							<a class="icon-link" href="alcedo7.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Angular application for Alcedo 7</p>
 						</div>
-						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/04/0079-1400x969-24610.jpg" alt="" class="img-responsive">
+						<a href="alcedo7.html">
+              <img src="images/portfolio/alcedo/thumb.jpg" alt="" class="img-responsive">
+						</a>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
-							<h1 class="project-title">Formidable</h1>
+							<a href="wagnermeyer.html">
+                <h1 class="project-title">Wagnermeyer</h1>
+							</a>
 							<span class="underline"></span>
-							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
+							<p class="tags">Website Design, Frontend</p>
+							<a class="icon-link" href="wagnermeyer.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Design and frontend development.</p>
 						</div>
-						<img src="http://market.designmodo.com/wp-content/uploads/2015/04/Header-2100x1408-54095.jpg" alt="" class="img-responsive">
+						<a href="wagnermeyer.html">
+              <img src="images/portfolio/wagnermeyer/thumb.jpg" alt="" class="img-responsive">
+						</a>
 					</div>
 				</div>
+        <!-- visitor analytics-->
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
-							<h1 class="project-title">Advanced</h1>
+							<a href="visitor-analytics.html">
+                <h1 class="project-title">Visitor Analytics</h1>
+							</a>
 							<span class="underline"></span>
-							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
+							<p class="tags">Frontend, UI, React</p>
+							<a class="icon-link" href="visitor-analytics.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Wix  app that provide visitor statistics.</p>
 						</div>
-						<img src="http://market.designmodo.com/wp-content/plugins/qards/../../uploads/2015/08/dragndrop3-2000x1349-104861-2000x1349-69909.jpg" alt="" class="img-responsive">
+						<a href="visitor-analytics.html">
+              <img src="images/portfolio/visitor-analytics/va1.png" alt="" class="img-responsive">
+						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="box">
 						<div class="project-details">
-							<h1 class="project-title">Android App</h1>
+							<a href="lutz-paletten.html">
+                <h1 class="project-title">Lutz Paletten</h1>
+							</a>
 							<span class="underline"></span>
 							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
+							<a class="icon-link" href="lutz-paletten.html"><i class="fa fa-arrow-right"></i></a>
+							<p class="description">Redesign the outdated existing website.</p>
 						</div>
-						<img src="http://market.designmodo.com/wp-content/uploads/2015/08/004-2000x1333-254891-2000x1333-10538.jpg" alt="" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="box">
-						<div class="project-details">
-							<h1 class="project-title">User Interface</h1>
-							<span class="underline"></span>
-							<p class="tags">Design, UI, UX, Frontend</p>
-							<a href="#"><i class="fa fa-arrow-right"></i></a>
-							<p class="description">User experience and User interface guidelines.</p>
-						</div>
-						<img src="http://market.designmodo.com/wp-content/uploads/2015/08/0014-2000x1333-291941-2000x1333-36373.jpg" alt="" class="img-responsive">
+						<a href="lutz-paletten.html">
+              <img src="images/portfolio/lutz/thumb.jpg" alt="" class="img-responsive">
+						</a>
 					</div>
 				</div>
 
 				<div class="col-sm-12">
 					<div class="text-center">
-						<a href="#" class="btn btn-dark">View my porfolio</a>
+						<a href="/portfolio.html" class="btn btn-dark">View my porfolio</a>
 					</div>
 					<hr class="separator">
 				</div>
@@ -254,8 +262,8 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h1 class="text-center title title--animated">
-            A look into my life
-            <span>Photos that describe me.</span>
+            My favourite...
+            <span>Photos with things I like.</span>
           </h1>
 				</div>
 
@@ -267,7 +275,7 @@
 					   data-author="Folkert Gorter"
 					   class="box">
 					  <img src="images/personal/1.jpg" alt="">
-					  <figure>I love coffee! Gets my day started and makes it longer when needed.</figure>
+					  <figure>Drink: coffee</figure>
 					</a>
 
 					<a href="images/personal/2.jpg"
@@ -277,7 +285,7 @@
 				  		data-author="Thomas Lefebvre"
 				  		class="box">
 					  <img src="images/personal/2.jpg" alt="">
-					  <figure>The freedom of working remote is amazing!</figure>
+					  <figure>Brand: Apple</figure>
 					</a>
 
 					<a href="images/personal/3.jpg"
@@ -287,88 +295,81 @@
 				  		data-author="Michael Hull"
 				  		class="box">
 					  <img src="images/personal/3.jpg" alt="">
-					  <figure>This is Barker, my best friend.</figure>
+					  <figure>Pet: Dog</figure>
 					</a>
 
-					<a href="images/personal/4.jpg"
+					<a href="images/jim.jpg"
 				  		data-size="1600x1067"
-				  		data-med="images/personal/4.jpg"
+				  		data-med="images/jim.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="Ales Krivec"
+				  		data-author="from google"
 				  		class="box">
-					  <img src="images/personal/4.jpg" alt="">
-					  <figure>Yes, I'm an Apple fanboy...</figure>
+					  <img src="images/jim.jpg" alt="">
+					  <figure>Comedian: Jim Jofferies</figure>
 					</a>
 
-					<a href="images/personal/5.jpg"
+					<a href="images/personal/metallica.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/5.jpg"
+				  		data-med="images/personal/metallica.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box">
-					  <img src="images/personal/5.jpg" alt="">
-					  <figure>I like to get high... at least 3000ft</figure>
+					  <img src="images/personal/metallica.jpg" alt="">
+					  <figure>Band: Metallica</figure>
 					</a>
 
-					<a href="images/personal/6.jpg"
+					<a href="images/personal/photography.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/6.jpg"
+				  		data-med="images/personal/photography.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box">
-					  <img src="images/personal/6.jpg" alt="">
-					  <figure>Cooking is an art. It's also one of the most relaxing things I do.</figure>
+					  <img src="images/personal/photography.jpg" alt="">
+					  <figure>Hobby: Photography.</figure>
 					</a>
 
-					<a href="images/personal/7.jpg"
+					<a href="images/personal/got.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/7.jpg"
+				  		data-med="images/personal/got.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box hidden-xs">
-					  <img src="images/personal/7.jpg" alt="">
-					  <figure>My most relaxing passion.</figure>
+					  <img src="images/personal/got.jpg" alt="">
+					  <figure>TV series: GOT.</figure>
 					</a>
 
-					<a href="images/personal/8.jpg"
+					<a href="images/personal/shutter_island.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/8.jpg"
+				  		data-med="images/personal/shutter_island.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box hidden-xs">
-					  <img src="images/personal/8.jpg" alt="">
-					  <figure>I always liked photography, now I have the necessarry toys to dive into it.</figure>
+					  <img src="images/personal/shutter_island.jpg" alt="">
+					  <figure>Movie: Shutter Island</figure>
 					</a>
 
-					<a href="images/personal/9.jpg"
+					<a href="images/personal/pasta.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/9.jpg"
+				  		data-med="images/personal/pasta.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box hidden-xs">
-					  <img src="images/personal/9.jpg" alt="">
-					  <figure>I also like my guitar. I used to play a lot but since I have so many hobbies I don't have that much free time. :-)</figure>
+					  <img src="images/personal/pasta.jpg" alt="">
+					  <figure>Food: Pasta</figure>
 					</a>
 
-					<a href="images/personal/10.jpg"
+					<a href="images/personal/jack.jpg"
 				  		data-size="1600x1068"
-				  		data-med="images/personal/10.jpg"
+				  		data-med="images/personal/jack.jpg"
 				  		data-med-size="1024x683"
-				  		data-author="-author"
+				  		data-author="-google"
 				  		class="box hidden-xs">
-					  <img src="images/personal/10.jpg" alt="">
-					  <figure>This is Odin. He and Barker get along pretty well.</figure>
+					  <img src="images/personal/jack.jpg" alt="">
+					  <figure>Ninjas vs pirates: Pirates</figure>
 					</a>
 				</div>
 
-				<div class="col-sm-12">
-					<div class="text-center">
-						<a href="#" class="btn btn-dark">
-							Find out more about me
-						</a>
-					</div>
-					<hr class="separator">
-				</div>
+        <hr class="separator">
 			</div>
 		</div>
 	</section>
@@ -379,22 +380,16 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="text-center title title--animated">
-            Clients
+            Clients and Employers
             <span>My code is used by</span>
           </h1>
 				</div>
 				<ul class="list-unstylet list-inline client-list">
 					<div class="row-wrap clearfix">
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-01.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-02.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-03.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-04.png"></li>
-					</div>
-					<div class="row-wrap clearfix hidden-xs">
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-04.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-03.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-02.png"></li>
-						<li><img src="http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/client-01.png"></li>
+						<li><img src="images/basf.png"></li>
+						<li><img src="images/digital1_logo.svg"></li>
+						<li><img src="images/she.png"></li>
+						<li><img src="images/et_logo.png"></li>
 					</div>
 				</ul>
 			</div>
@@ -424,13 +419,10 @@
 						</ul>
 						<h3 class="text-center">Let's socialize!</h3>
 						<ul class="social-media list-inline text-center">
-							<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i>Dribbble</a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
-							<li><a href="#"><i class="fa fa-flickr"></i>Flicker</a></li>
-							<li><a href="#"><i class="fa fa-github"></i>Github</a></li>
-							<li><a href="#"><i class="fa fa-behance"></i>Behance</a></li>
+							<li><a target="_blank" href="https://twitter.com/GheorgheoiuN"><i class="fa fa-twitter"></i>Twitter</a></li>
+							<li><a target="_blank" href="https://dribbble.com/skkypz"><i class="fa fa-dribbble"></i>Dribbble</a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/in/nicolae-gheorgheoiu-0460b0b1?trk=nav_responsive_tab_profile_pic"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+							<li><a target="_blank" href="https://github.com/GheorgheoiuNicolae/"><i class="fa fa-github"></i>Github</a></li>
 						</ul>
 					</div>
 				</div>
@@ -438,7 +430,7 @@
 		</div>
 		<div class="bottom-side">
 			<p class="text-center">
-				© Copright 2015 Joel Doe
+				© Copyright 2017 Gheorgheoiu Nicolae
 			</p>
 		</div>
 	</footer>

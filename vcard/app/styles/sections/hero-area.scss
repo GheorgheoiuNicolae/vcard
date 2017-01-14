@@ -1,3 +1,9 @@
+a.logo, a.logo:hover, a.logo:visited {
+	color: #fff;
+	text-decoration: none;
+	padding: 0;
+}
+
 // Section: hero-area
 .hero-area {
 	height: 700px;
@@ -39,7 +45,7 @@
 	}
 }
 
-// Responsive 
+// Responsive
 @media all and (max-width: 767px) {
 	.hero-area {
 		height: 300px;
