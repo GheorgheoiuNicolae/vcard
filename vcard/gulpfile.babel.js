@@ -1,9 +1,15 @@
 // generated on 2015-10-11 using generator-gulp-webapp 1.0.3
+// var gulp = require('gulp');
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+
+// var gulpLoadPlugins = require('gulpLoadPlugins');
+// var browserSync = require('browserSync');
+// var del = require('del');
+// var wiredep = require('wiredep')
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;

@@ -145,6 +145,11 @@
 // Section: (Homepage): Latest Works
 .latest-works {
   background-color: $sectionBackground;
+  a.mobile-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
   .box {
     margin-bottom: 30px;
     height: 200px;
@@ -299,7 +304,7 @@
     padding-bottom: 0;
     ul li {
       width: 50%!important;
-      border-bottom: 1px solid $black-transparent;
+      // border-bottom: 1px solid $black-transparent;
     }
   }
 }
@@ -335,10 +340,16 @@ p.tech {
     display: inline-block;
     margin-bottom: 10px;
   }
-
 }
 
 .a-look-into-my-life.portfolio .box {
   max-height: 100px;
   overflow: hidden;
+  img {
+    opacity: .5;
+    transition: all .5s linear;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

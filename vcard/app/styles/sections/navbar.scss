@@ -150,3 +150,24 @@
     }
   }
 }
+
+@media all and (max-width: 370px) {
+  .navbar-toggle {
+    margin-top: 0;
+    padding: 10px 5px;
+  }
+  .navbar-brand {
+    // padding-left: 0!important;
+    margin-left: 0!important;
+    a.logo {
+      font-size: 18px;
+    }
+  }
+
+
+  .short-about {
+    img {
+      padding: 30px;
+    }
+  }
+}

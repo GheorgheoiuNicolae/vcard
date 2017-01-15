@@ -323,4 +323,3 @@ $(".pieProgress").asPieProgress("start");
     // end photoswipe
 });
 
-

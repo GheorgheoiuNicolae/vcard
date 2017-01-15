@@ -20,6 +20,9 @@
 @import "theme.scss";
 
 
+html {
+  overflow-x: hidden;
+}
 
 // Helper classes
 .mt10 {
