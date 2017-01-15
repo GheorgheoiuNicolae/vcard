@@ -12,6 +12,7 @@ import {stream as wiredep} from 'wiredep';
 // var wiredep = require('wiredep')
 
 const $ = gulpLoadPlugins();
+console.log('$', $);
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
